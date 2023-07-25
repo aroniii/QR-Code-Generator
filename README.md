@@ -1,0 +1,1 @@
+https://generatorofqr.netlify.app/
