@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFFFFF;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23FFFFFF' cx='50' cy='0' r='50'/%3E%3Cg fill='%23f1f1f1' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e2e2e2' cx='50' cy='100' r='50'/%3E%3Cg fill='%23d4d4d4' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c6c6c6' cx='50' cy='200' r='50'/%3E%3Cg fill='%23b9b9b9' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ababab' cx='50' cy='300' r='50'/%3E%3Cg fill='%239e9e9e' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23919191' cx='50' cy='400' r='50'/%3E%3Cg fill='%23848484' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23777777' cx='50' cy='500' r='50'/%3E%3Cg fill='%236a6a6a' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%235e5e5e' cx='50' cy='600' r='50'/%3E%3Cg fill='%23525252' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23474747' cx='50' cy='700' r='50'/%3E%3Cg fill='%233b3b3b' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23303030' cx='50' cy='800' r='50'/%3E%3Cg fill='%23262626' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%231b1b1b' cx='50' cy='900' r='50'/%3E%3Cg fill='%23111111' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23000000' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: contain;
+    font-family: sans-serif;
+    max-width: 500px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+input[type="color"]{
+    border: none;
+    width: 32.5%;
+    height: 40px;
+    border-radius: 3px;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper{
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch{
+    border: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.qr-text{
+    padding: 1rem;
+    display: block;
+    background: #000000;
+    border-radius: 4px;
+    width: 100%;
+    margin: 0.5rem 0 1rem 0;
+    color: #fff;
+    outline: none;
+    box-shadow: 0 15px 16px rgb(0, 0, 0), 0 5px 6px rgb(0, 0, 0);
+}
+
+.qr-text::placeholder{
+    color: #ffffff;
+    font-weight: 500;
+}
+
+#qr-code{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%23FFFFFF'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%237D7D7D' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%237D7D7D' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.5'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: 0 15px 32px rgb(0, 0, 0), 0 15px 16px rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+#qr-code img, #qr-code canvas{
+    max-width: 100% !important;
+    max-height: 100% !important;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sizes{
+    width: 32.5%;
+    height: 40px;
+    color: #fff;
+    background: #181b29;
+    border: 1px solid #414866;
+    border-radius: 4px;
+    outline: none;
+}
+
+.btn{
+    color: #fff;
+    max-width: 200px;
+    padding: 14px;
+    background-color: #FFFFFF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23484848' stroke-width='100' stroke-opacity='0.55' %3E%3Ccircle fill='%23FFFFFF' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23eeeeee' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23dddddd' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23cdcdcd' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23bdbdbd' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23adadad' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%239d9d9d' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%238d8d8d' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%237e7e7e' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23707070' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23616161' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23535353' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23454545' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23383838' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%232b2b2b' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%231f1f1f' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23131313' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23000000' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;   
+    border-radius: 4px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    flex: 1;
+}
+
+.btn img{
+    width: 20px;
+    margin-left: 10px;
+}
+
+.share-btn{
+    margin-left: 0.7rem;
+    
+}
+
+.action-container{
+    display: flex;
+    margin: 1rem 0;
+}
+
+.light{
+    box-shadow: 0 10px 11px rgb(0, 0, 0);
+}
+.dark{
+    box-shadow: 0 10px 11px rgb(0, 0, 0);
+}
+
+@media (max-width: 512px){
+    body{
+        max-width: 100%;
+        padding: 10px;
+    }
+    #qr-code{
+        width: 95vw;
+        height: 95vw;
+    }
+    #qr-code img, #qr-code canvas{
+        max-width: 95vw !important;
+        max-height: 95vw !important;
+    }
+    .btn{
+        min-width: unset;
+    }
+
+    #share-logo{
+        visibility: hidden;
+    }
+    #download-logo{
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 350px){
+    .action-container{
+        flex-direction: column;
+    }
+    .share-btn{
+        margin-left: 0;
+        margin-top: 0.7rem;
+    }
+}
